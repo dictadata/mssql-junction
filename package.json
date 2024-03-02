@@ -1,0 +1,24 @@
+{
+  "name": "mssql-junction",
+  "version": "0.9.20",
+  "description": "MSSQL storage junction plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "testrunner.bat"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dictadata/mssql-junction.git"
+  },
+  "keywords": [
+    "dictadata",
+    "storage",
+    "junction"
+  ],
+  "author": "Drew O. Letcher",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dictadata/mssql-junction/issues"
+  },
+  "homepage": "https://github.com/dictadata/mssql-junction#readme"
+}
