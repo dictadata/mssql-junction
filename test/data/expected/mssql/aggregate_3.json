@@ -1,0 +1,42 @@
+{
+  "status": 0,
+  "message": "OK",
+  "type": "list",
+  "data": [
+    {
+      "Foo": "third",
+      "baz_sum": 789,
+      "count": 1,
+      "dt_min": "2018-10-18T00:00:00.000Z",
+      "dt_max": "2018-10-18T00:00:00.000Z"
+    },
+    {
+      "Foo": "second",
+      "baz_sum": 456,
+      "count": 1,
+      "dt_min": "2018-10-07T00:00:00.000Z",
+      "dt_max": "2018-10-07T00:00:00.000Z"
+    },
+    {
+      "Foo": "first",
+      "baz_sum": 123,
+      "count": 1,
+      "dt_min": "2018-10-06T19:00:00.000Z",
+      "dt_max": "2018-10-06T19:00:00.000Z"
+    },
+    {
+      "Foo": "one-twenty",
+      "baz_sum": 120,
+      "count": 1,
+      "dt_min": null,
+      "dt_max": null
+    },
+    {
+      "Foo": "one-ten",
+      "baz_sum": 110,
+      "count": 1,
+      "dt_min": null,
+      "dt_max": null
+    }
+  ]
+}

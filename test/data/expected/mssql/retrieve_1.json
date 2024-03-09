@@ -1,0 +1,67 @@
+{
+  "status": 0,
+  "message": "OK",
+  "type": "list",
+  "data": [
+    {
+      "Foo": "first",
+      "Bar": "row",
+      "Baz": 123,
+      "Fobe": 1,
+      "Dt Test": "2018-10-07T00:00:00.000Z",
+      "enabled": true,
+      "subObj1": {
+        "state": "running"
+      },
+      "subObj2": {
+        "subsub": {
+          "izze": 12
+        }
+      },
+      "tags": [
+        "one"
+      ]
+    },
+    {
+      "Foo": "second",
+      "Bar": "row",
+      "Baz": 456,
+      "Fobe": 2.1,
+      "Dt Test": "2018-10-07T00:00:00.000Z",
+      "enabled": false,
+      "subObj1": {
+        "state": "stopped"
+      },
+      "subObj2": {
+        "subsub": {
+          "izze": 88
+        }
+      },
+      "tags": [
+        "one",
+        "two"
+      ]
+    },
+    {
+      "Foo": "third",
+      "Bar": "row your boat",
+      "Baz": 789,
+      "Fobe": 3,
+      "Dt Test": "2018-10-18T00:00:00.000Z",
+      "enabled": true,
+      "subObj1": {
+        "state": "paused"
+      },
+      "subObj2": {
+        "subsub": {
+          "izze": 33
+        }
+      },
+      "tags": [
+        "one",
+        "two",
+        "three"
+      ]
+    }
+  ]
+}

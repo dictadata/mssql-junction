@@ -1,24 +1,45 @@
 {
-  "name": "mssql-junction",
-  "version": "0.9.20",
-  "description": "MSSQL storage junction plugin",
-  "main": "index.js",
-  "scripts": {
-    "test": "testrunner.bat"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/dictadata/mssql-junction.git"
-  },
+  "name": "@dictadata/mssql-junction",
+  "version": "0.9.21",
+  "description": "MSSQL storage junction plugin for @dictadata/storage-junctions",
+  "author": "Drew O. Letcher",
+  "license": "MIT",
   "keywords": [
     "dictadata",
     "storage",
     "junction"
   ],
-  "author": "Drew O. Letcher",
-  "license": "MIT",
+  "type": "commonjs",
+  "engines": {
+    "node": ">18.0.0"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "testrunner.bat"
+  },
+  "directories": {
+    "doc": "docs",
+    "lib": "storage",
+    "test": "test",
+    "example": "examples"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dictadata/mssql-junction.git"
+  },
+  "homepage": "https://github.com/dictadata/mssql-junction#readme",
   "bugs": {
     "url": "https://github.com/dictadata/mssql-junction/issues"
   },
-  "homepage": "https://github.com/dictadata/mssql-junction#readme"
+  "devDependencies": {
+    "colors": "^1.4.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.1.1"
+  },
+  "dependencies": {
+    "@dictadata/storage-junctions": "^0.9.109",
+    "tedious": "^17.0.0",
+    "tsqlstring": "^1.0.1"
+  }
 }

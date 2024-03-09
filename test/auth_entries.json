@@ -1,0 +1,22 @@
+[
+  {
+    "locus": "server=dev.dictadata.net;database=storage_node",
+    "auth": {
+      "username": "dicta",
+      "password": "data"
+    }
+  },
+  {
+    "locus": "http://dev.dictadata.net:9200",
+    "auth": {
+      "apiKey": ""
+    }
+  },
+  {
+    "locus": "ftp://dev.dictadata.net",
+    "auth": {
+      "username": "dicta",
+      "password": "data"
+    }
+  }
+]

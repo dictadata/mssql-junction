@@ -1,0 +1,11 @@
+{
+  "status": 0,
+  "message": "OK",
+  "type": "list",
+  "data": [
+    {
+      "baz_sum": 579,
+      "fobe_max": 2.1
+    }
+  ]
+}

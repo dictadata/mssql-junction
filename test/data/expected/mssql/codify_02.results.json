@@ -1,0 +1,48 @@
+{
+  "name": "*",
+  "type": "engram",
+  "smt": {
+    "model": "*",
+    "locus": "*",
+    "schema": "*",
+    "key": "*"
+  },
+  "fields": [
+    {
+      "name": "Foo",
+      "type": "keyword",
+      "size": 7
+    },
+    {
+      "name": "Bar",
+      "type": "text",
+      "size": 13
+    },
+    {
+      "name": "Baz",
+      "type": "integer"
+    },
+    {
+      "name": "Fobe",
+      "type": "number"
+    },
+    {
+      "name": "Dt Test",
+      "type": "date"
+    },
+    {
+      "name": "enabled",
+      "type": "boolean"
+    },
+    {
+      "name": "tags",
+      "type": "keyword",
+      "size": 30
+    },
+    {
+      "name": "widgets",
+      "type": "text",
+      "size": 87
+    }
+  ]
+}
