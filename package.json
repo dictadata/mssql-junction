@@ -1,6 +1,6 @@
 {
   "name": "@dictadata/mssql-junction",
-  "version": "0.9.21",
+  "version": "0.9.18",
   "description": "MSSQL storage junction plugin for @dictadata/storage-junctions",
   "author": "Drew O. Letcher",
   "license": "MIT",
