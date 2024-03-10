@@ -5,6 +5,20 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Launch via NPM",
+      "request": "launch",
+      "runtimeArgs": [
+        "run-script",
+        "debug"
+      ],
+      "runtimeExecutable": "npm",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "node"
+    },
+
+    {
       "type": "node",
       "request": "launch",
       "name": "mssql createSchema",
@@ -159,6 +173,120 @@
         "NODE_ENV": "development",
         "LOG_LEVEL": "verbose"
       }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "mssql add tract",
+      "cwd": "${workspaceFolder}/test",
+      "runtimeExecutable": "etl",
+      "runtimeArgs": [
+        "-c",
+        "etl.dev.config.json",
+        "-t",
+        "tracts/add.tract.json",
+        "engrams"
+      ],
+      "env": {
+        "NODE_ENV": "development",
+        "LOG_LEVEL": "verbose"
+      },
+      "outputCapture": "std"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "mssql list tract",
+      "cwd": "${workspaceFolder}/test",
+      "runtimeExecutable": "etl",
+      "runtimeArgs": [
+        "-c",
+        "etl.dev.config.json",
+        "-t",
+        "tracts/list.tract.json",
+        "list"
+      ],
+      "env": {
+        "NODE_ENV": "development",
+        "LOG_LEVEL": "verbose"
+      },
+      "outputCapture": "std"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "mssql codify tract",
+      "cwd": "${workspaceFolder}/test",
+      "runtimeExecutable": "etl",
+      "runtimeArgs": [
+        "-c",
+        "etl.dev.config.json",
+        "-t",
+        "tracts/codify.tract.json",
+        "codify"
+      ],
+      "env": {
+        "NODE_ENV": "development",
+        "LOG_LEVEL": "verbose"
+      },
+      "outputCapture": "std"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "mssql transfer tract",
+      "cwd": "${workspaceFolder}/test",
+      "runtimeExecutable": "etl",
+      "runtimeArgs": [
+        "-c",
+        "etl.dev.config.json",
+        "-t",
+        "tracts/transfer.tract.json",
+        "all"
+      ],
+      "env": {
+        "NODE_ENV": "development",
+        "LOG_LEVEL": "verbose"
+      },
+      "outputCapture": "std"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "mssql load tract",
+      "cwd": "${workspaceFolder}/test",
+      "runtimeExecutable": "etl",
+      "runtimeArgs": [
+        "-c",
+        "etl.dev.config.json",
+        "-t",
+        "tracts/load.tract.json",
+        "load"
+      ],
+      "env": {
+        "NODE_ENV": "development",
+        "LOG_LEVEL": "verbose"
+      },
+      "outputCapture": "std"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "mssql transform tract",
+      "cwd": "${workspaceFolder}/test",
+      "runtimeExecutable": "etl",
+      "runtimeArgs": [
+        "-c",
+        "etl.dev.config.json",
+        "-t",
+        "tracts/transform.tract.json",
+        "all"
+      ],
+      "env": {
+        "NODE_ENV": "development",
+        "LOG_LEVEL": "verbose"
+      },
+      "outputCapture": "std"
     }
   ]
 }

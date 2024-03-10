@@ -1,0 +1,65 @@
+{
+  "domain": "foo",
+  "name": "transfer.tract.json",
+  "type": "tract",
+  "actions": [
+    {
+      "name": "csv-table",
+      "action": "transfer",
+      "origin": {
+        "smt": "csv|./data/input/|foofile.csv|*",
+        "options": {
+          "header": true,
+          "encoding": "./data/input/engrams/foo_schema.engram.json"
+        }
+      },
+      "terminal": {
+        "smt": {
+          "model": "mssql",
+          "locus": "server=dev.dictadata.net;database=storage_node",
+          "schema": "foo_schema_etl",
+          "key": "*"
+        }
+      }
+    },
+    {
+      "name": "table-csv",
+      "action": "transfer",
+      "origin": {
+        "smt": "foo:mssql-foo_schema"
+      },
+      "terminal": {
+        "smt": "csv|./data/output/tracts/|foofile.csv|*",
+        "options": {
+          "header": true
+        }
+      }
+    },
+    {
+      "name": "bulkload",
+      "action": "transfer",
+      "origin": {
+        "smt": "csv|/var/dictadata/test/data/input/|timeseries.csv|*",
+        "options": {
+          "encoding": {
+            "fields": {
+              "time": "date",
+              "temp": "number"
+            }
+          }
+        }
+      },
+      "terminal": {
+        "smt": {
+          "model": "mssql",
+          "locus": "server=dev.dictadata.net;database=storage_node",
+          "schema": "timeseries",
+          "key": "*"
+        },
+        "options": {
+          "bulkLoad": true
+        }
+      }
+    }
+  ]
+}
