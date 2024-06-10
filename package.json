@@ -33,13 +33,12 @@
   },
   "devDependencies": {
     "colors": "^1.4.0",
-    "eslint": "^8.57.0",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^6.1.1"
+    "eslint": "^9.4.0"
   },
   "dependencies": {
-    "@dictadata/storage-junctions": "^0.9.109",
-    "tedious": "^17.0.0",
+    "@dictadata/lib": "github:dictadata/lib#semver:1.0",
+    "@dictadata/storage-junctions": "^0.9.113",
+    "tedious": "^18.2.0",
     "tsqlstring": "^1.0.1"
   }
 }
