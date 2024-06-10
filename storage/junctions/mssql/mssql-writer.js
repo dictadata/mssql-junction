@@ -5,7 +5,7 @@
 
 const { StorageWriter } = require('@dictadata/storage-junctions');
 const { StorageError } = require("@dictadata/storage-junctions/types");
-const { logger } = require('@dictadata/storage-junctions/utils');
+const { logger } = require('@dictadata/lib');
 
 
 module.exports = exports = class MSSQLWriter extends StorageWriter {

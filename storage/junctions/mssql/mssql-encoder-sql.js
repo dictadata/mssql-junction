@@ -6,7 +6,7 @@
 const encoder = require('./mssql-encoder');
 const sqlString = require('tsqlstring');
 const { StorageError } = require('@dictadata/storage-junctions/types');
-const { typeOf, isDate, parseDate, logger } = require('@dictadata/storage-junctions/utils');
+const { typeOf, isDate, parseDate, logger } = require('@dictadata/lib');
 
 exports.connectionConfig = (smt, options) => {
 

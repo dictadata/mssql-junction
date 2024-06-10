@@ -5,7 +5,7 @@
 
 const { StorageJunction } = require('@dictadata/storage-junctions');
 const { Engram, StorageResults, StorageError } = require('@dictadata/storage-junctions/types');
-const { typeOf, logger } = require('@dictadata/storage-junctions/utils');
+const { typeOf, logger } = require('@dictadata/lib');
 
 const MSSQLReader = require("./mssql-reader");
 const MSSQLWriter = require("./mssql-writer");

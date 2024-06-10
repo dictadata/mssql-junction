@@ -4,7 +4,7 @@
 "use strict";
 
 const { StorageReader } = require('@dictadata/storage-junctions');
-const { logger } = require('@dictadata/storage-junctions/utils');
+const { logger } = require('@dictadata/lib');
 const sqlEncoder = require("./mssql-encoder-sql");
 const tedious = require('tedious');
 

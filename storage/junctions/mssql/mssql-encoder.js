@@ -3,7 +3,7 @@
  */
 "use strict";
 
-const { ynBoolean } = require('@dictadata/storage-junctions/utils');
+const { ynBoolean } = require('@dictadata/lib');
 const TYPES = require('tedious').TYPES;
 
 var { stringBreakpoints } = require('@dictadata/storage-junctions/types');

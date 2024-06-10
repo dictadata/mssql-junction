@@ -5,7 +5,7 @@
 
 require("../register");
 const { codify } = require("@dictadata/storage-junctions/test")
-const { logger } = require("@dictadata/storage-junctions/utils");
+const { logger } = require("@dictadata/lib");
 
 logger.info("=== tests: MS SQL Codify ");
 
