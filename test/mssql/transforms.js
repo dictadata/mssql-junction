@@ -38,7 +38,7 @@ async function tests() {
           "dt_test": "=Dt Test",
           "state": "=subObj1.state",
         },
-        "override": {
+        "assign": {
           "fie": "where's fum?"
         },
         "remove": [ "fobe" ]
@@ -93,7 +93,7 @@ async function tests() {
         "default": {
           "fie": "where's fum?"
         },
-        "override": {
+        "assign": {
           "fum": "here"
         },
         "map": {
@@ -136,7 +136,7 @@ async function tests() {
         "default": {
           "fie": "where's fum?"
         },
-        "override": {
+        "assign": {
           "fum": "here"
         },
         "map": {

@@ -177,7 +177,7 @@ class MSSQLJunction extends StorageJunction {
     }
     catch (err) {
       logger.warn(err);
-      throw this.Error(err);
+      throw this.StorageError(err);
     }
   }
 
@@ -206,7 +206,7 @@ class MSSQLJunction extends StorageJunction {
     }
     catch (err) {
       logger.warn(err);
-      throw this.Error(err);
+      throw this.StorageError(err);
     }
   }
 
@@ -242,7 +242,7 @@ class MSSQLJunction extends StorageJunction {
     }
     catch (err) {
       logger.warn(err);
-      throw this.Error(err);
+      throw this.StorageError(err);
     }
   }
 
@@ -266,7 +266,7 @@ class MSSQLJunction extends StorageJunction {
         return new StorageResults(404, "table not found");
 
       logger.warn(err.number, err.message);
-      throw this.Error(err);
+      throw this.StorageError(err);
     }
   }
 
@@ -310,7 +310,7 @@ class MSSQLJunction extends StorageJunction {
     }
     catch (err) {
       logger.warn(err);
-      throw this.Error(err);
+      throw this.StorageError(err);
     }
   }
 
@@ -343,7 +343,7 @@ class MSSQLJunction extends StorageJunction {
         return new StorageResults(err.number, err.message);
 
       logger.warn(err);
-      throw this.Error(err);
+      throw this.StorageError(err);
     }
   }
 
@@ -378,7 +378,7 @@ class MSSQLJunction extends StorageJunction {
     }
     catch (err) {
       logger.warn(err);
-      throw this.Error(err);
+      throw this.StorageError(err);
     }
   }
 
@@ -412,7 +412,7 @@ class MSSQLJunction extends StorageJunction {
     }
     catch (err) {
       logger.warn(err);
-      throw this.Error(err);
+      throw this.StorageError(err);
     }
   }
 
@@ -446,7 +446,7 @@ class MSSQLJunction extends StorageJunction {
     }
     catch (err) {
       logger.warn(err);
-      throw this.Error(err);
+      throw this.StorageError(err);
     }
   }
 
