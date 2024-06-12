@@ -1,9 +1,11 @@
 # model-junction 0.9.21
 
+- version 0.9.19
+  - refactor: use utils modules from @dictadata/lib
+  - updated: @dictadata/storage-junctions 0.9.114
 - version 0.9.18
-  - separate mssql-junction project from storage-junctions
-  -
-
+  - refactor: separate mssql-junction project from storage-junctions
+  - updated: @dictadata/storage-junctions 0.9.110
 - version 0.4.7
   - add storeBulk method for mssql-junction
 - version 0.4.2
