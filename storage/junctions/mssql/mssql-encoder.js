@@ -3,7 +3,7 @@
  */
 "use strict";
 
-const { ynBoolean } = require('@dictadata/lib');
+const { isBoolean } = require('@dictadata/lib');
 const TYPES = require('tedious').TYPES;
 
 var { stringBreakpoints } = require('@dictadata/storage-junctions/types');
@@ -105,7 +105,7 @@ exports.storageField = (column) => {
     field.default = (column[ "default" ].value === "(NULL)") ? null : column[ "default" ].value;
   }
   if (Object.hasOwn(column, "is_nullable"))
-    field.nullable = ynBoolean(column[ "is_nullable" ].value);
+    field.nullable = isBoolean(column[ "is_nullable" ].value);
   if (Object.hasOwn(column, "key_ordinal"))
     field.key = column[ "key_ordinal" ].value;
 
