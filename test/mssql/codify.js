@@ -16,7 +16,9 @@ async function tests() {
     origin: {
       smt: "mssql|server=dev.dictadata.net;database=storage_node|foo_schema|=Foo"
     },
-    output: './test/data/output/mssql/codify_00.json'
+    terminal: {
+      output: './test/data/output/mssql/codify_00.json'
+    }
   })) return 1;
 
   logger.info("=== codify foo_schema_01");
@@ -24,7 +26,9 @@ async function tests() {
     origin: {
       smt: "mssql|server=dev.dictadata.net;database=storage_node|foo_schema_01|=Foo"
     },
-    output: './test/data/output/mssql/codify_01.json'
+    terminal: {
+      output: './test/data/output/mssql/codify_01.json'
+    }
   })) return 1;
 
   logger.info("=== codify foo_widgets");
@@ -32,7 +36,9 @@ async function tests() {
     origin: {
       smt: "mssql|server=dev.dictadata.net;database=storage_node|foo_widgets|=Foo"
     },
-    output: './test/data/output/mssql/codify_02.json'
+    terminal: {
+      output: './test/data/output/mssql/codify_02.json'
+    }
   })) return 1;
 
 }
